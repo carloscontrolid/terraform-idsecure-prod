@@ -11,7 +11,6 @@ locals {
   sorted_allowed_ips_port_3306 = sort(var.allowed_ips_port_3306)
 }
 
-
 # Ips Allowed
 variable "allowed_ips_port_5001" {
   default = [
