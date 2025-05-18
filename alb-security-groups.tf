@@ -14,7 +14,7 @@ resource "aws_security_group" "idsecure_loadbalancer_security_group_public" {
   }
 
   ingress {
-    description = "Port 5000 (clients) (idsecure-report/main)"
+    description = "Port 5000 (clients) (idsecure-report main)"
     from_port   = 5000
     to_port     = 5000
     protocol    = "tcp"
@@ -46,7 +46,7 @@ resource "aws_security_group" "idsecure_loadbalancer_security_group_public" {
   }
 
   egress {
-    description     = "All → iD Secure ECS Security Group"
+    description     = "All - iD Secure ECS Security Group"
     from_port       = 0
     to_port         = 0
     protocol        = "-1"
